@@ -1,0 +1,19 @@
+{
+  "tables": [
+    {
+      "source": { 
+        "table": "dbo.Produtos", 
+        "columns": ["IdProduto", "NomeProduto", "Preco", "DataCadastro"] 
+      },
+      "target": { 
+        "file": "produtos.csv", 
+        "columns": ["id", "nome", "preco", "data_cadastro"] 
+      },
+      "rules": { 
+        "nome": "string",
+        "preco": "number",
+        "data_cadastro": "date"
+      }
+    }
+  ]
+}
